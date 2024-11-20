@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>lgapps2022</title><style>.temp-spinner {
+            z-index: 10000 !important;
+            display:inline-block;
+            position:absolute;
+            top: calc(50vh - 2.2rem);
+            left: calc(50vw - 2.2rem);
+            width: 4.4rem;
+            height: 4.4rem;
+            border-radius:50%;
+            background: url('/discovery_2022/spinner.gif') no-repeat center center;
+            background-size: 3.2rem;
+            background-color:#575E66;
+        }</style><link href="/discovery_2022/app.js" rel="preload" as="script"><link href="/discovery_2022/css/app.css" rel="preload" as="style"><link href="/discovery_2022/css/app.css" rel="stylesheet"></head><body style="background-color: black"><script>var bridge = new PalmServiceBridge();
+    bridge.onservicecallback = function(response){
+    console.log(response);
+    };
+    bridge.call("luna://com.webos.service.tts/speakVKB", JSON.stringify({"text": 'loading', "clear": false}));</script><noscript><strong>We're sorry but lgapps2022 doesn't work properly without JavaScript enabled. Please enable it to continue. %></strong></noscript><div class="temp-spinner-area temp-spinner"></div><div id="app"></div><script src="/discovery_2022/app.js"></script></body></html>
